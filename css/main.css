@@ -64,7 +64,7 @@ label { margin-right: 20px; font-size: 26px; line-height: 70px; display: none; w
 .content-college{background: white;color: black;margin-bottom: 2em;margin-left: 5%; margin-right: 5%;border-radius: 5px;padding: 2em;text-align: center;}
 
 /* Абитуриенту */
-.abiturients{position: relative;line-height: 1.5;text-align: justify;z-index: 1;overflow: hidden;padding: 2em;color: white;background: #2bb52b;border-radius: 5px;cursor: default;box-shadow: 0 5px 15px -5px #000;}
+.abiturients{position: relative;line-height: 1.5;text-align: justify;z-index: 1;overflow: hidden;padding: 2em;color: white;background: #6bdb6b;border-radius: 5px;cursor: default;box-shadow: 0 5px 15px -5px #000;}
 .abiturients h4{font-weight: bold;text-align: center;z-index: 3;font-size: 24px;}
 .abiturients p{position: relative;z-index: 5;font-size: 20px;color: white;padding: 1em;opacity: 0.8;}
 
