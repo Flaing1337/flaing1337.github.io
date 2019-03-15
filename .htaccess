@@ -1,0 +1,10 @@
+﻿#Кодировка
+AddDefaultCharset UTF-8
+
+#404
+ErrorDocument 404 http://ваш_сайт/404.html
+
+#Защита файла от хотлинка   
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www.)?ваш_сайт.ru.*$ [NC]
+RewriteRule \.(jpe?g|bmp|gif|png|css|zip|pdf|txt|doc)$ - [NC,F,L]
