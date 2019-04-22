@@ -11,3 +11,13 @@ RewriteRule \.(jpe?g|bmp|gif|png|zip|pdf|txt|doc)$ - [NC,F,L]
 
 #Запрет на просмотр директорий
 Options All -Indexes
+
+#Убираем .html
+RewriteEngine on
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ http://www.webasist.ml/$1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html [L]
