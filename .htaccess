@@ -6,7 +6,7 @@ ErrorDocument 404 http://webasist.ml/404.html
 
 #Защита файла от хотлинка   
 RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http(s)?://(www.)?webasist.ml.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?webasist.ml [NC]
 RewriteRule \.(jpe?g|bmp|gif|png|css|zip|pdf|txt|doc)$ - [NC,F,L]
 
 #Запрет на просмотр директорий
